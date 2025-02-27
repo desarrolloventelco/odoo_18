@@ -16,7 +16,8 @@ services:
       - HOST=db
       - USER=odoo
       - PASSWORD=odoo
-    command: odoo 
+    command: odoo -d odoo --db_user=odoo --db_password=odoo -i base --without-demo=all
+ 
 
     restart: always
 
